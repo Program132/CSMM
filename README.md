@@ -9,3 +9,5 @@ Vous trouvez le fichier src du projet, et une partie du fichier ressource.
 ## Liens
 
 Le cour pour apprendre = https://www.youtube.com/watch?v=NHtxgnEU9Hg&list=PLgGxnYpb-WQHEXlI12lWu27HjJiqNlL4r&index=1
+
+Mon discord : https://discord.com/invite/CVPdpdpmGv
