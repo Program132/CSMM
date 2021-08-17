@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "csmm:blocks/blue_emerald_block"
+    "all": "csmm:blocks/red_emerald_block"
   }
 }

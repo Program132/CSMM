@@ -2,6 +2,7 @@ package fr.program.csmm;
 
 import fr.program.csmm.init.ModBlocks;
 import fr.program.csmm.init.ModItems;
+import fr.program.csmm.init.ModTileEntities;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -19,6 +20,7 @@ public class CSMM {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.ITEMS.register(bus);
         ModBlocks.BLOCKS.register(bus);
+        ModTileEntities.TILE_ENTITIES.register(bus);
     }
 
     private void setup(FMLCommonSetupEvent event) {

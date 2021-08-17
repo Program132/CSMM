@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "csmm:blue_emerald_block"
+          "name": "csmm:red_emerald_block"
         }
       ],
       "conditions": [
