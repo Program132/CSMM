@@ -1,6 +1,10 @@
 {
   "item.csmm.copper_ingot": "Lingot de Cuivre",
-  "item.csmm.copper_stick": "Baton de Cuivre",
+  "item.csmm.copper_stick": "Bâton de Cuivre",
+  "item.csmm.copper_sword": "Epée en cuivre",
+  "item.csmm.copper_pickaxe": "Pioche en cuivre",
+  "item.csmm.copper_axe": "Hache en cuivre",
+  "item.csmm.copper_shovel": "Pelle en cuivre",
 
   "block.csmm.blue_emerald_block": "Block d'émeraude Bleu"
 }
