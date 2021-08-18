@@ -7,6 +7,16 @@
   "item.csmm.copper_shovel": "Copper Shovel",
   "item.csmm.amethyst_gem": "Amethyst Gem",
 
+  "item.csmm.amethyst_helmet": "Amethyst Helmet",
+  "item.csmm.amethyst_chestplate": "Amethyst Chestplate",
+  "item.csmm.amethyst_leggings": "Amethyst Leggings",
+  "item.csmm.amethyst_boots": "Amethyst Boots",
+
+  "item.csmm.blue_apple": "Blue Apple",
+  "item.csmm.green_apple": "Green Apple",
+
+
+
   "block.csmm.blue_emerald_block": "Blue Emerald Block",
   "block.csmm.red_emerald_block": "Red Emerald Block",
   "block.csmm.amethyst_ore": "Amethyst Ore"

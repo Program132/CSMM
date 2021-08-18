@@ -7,6 +7,16 @@
   "item.csmm.copper_shovel": "Pelle en cuivre",
   "item.csmm.amethyst_gem": "Gem d'améthyste",
 
+  "item.csmm.amethyst_helmet": "Casque en améthyste",
+  "item.csmm.amethyst_chestplate": "Plastron en améthyste",
+  "item.csmm.amethyst_leggings": "Pantalon en améthyste",
+  "item.csmm.amethyst_boots": "Bottes en améthyste",
+
+  "item.csmm.blue_apple": "Pomme bleu",
+  "item.csmm.green_apple": "Pomme verte",
+
+
+
   "block.csmm.blue_emerald_block": "Block d'émeraude Bleu",
   "block.csmm.red_emerald_block": "Block d'émeraude Rouge",
   "block.csmm.amethyst_ore": "Minerai d'améthyste"
