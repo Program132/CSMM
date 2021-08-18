@@ -15,15 +15,15 @@ public class TileEntityRedEmerauld extends TileEntity implements ITickableTileEn
     }
 
     @Override
-    public void func_230337_a_(BlockState state, CompoundNBT nbt) { // func_230337_a_ = read
-        super.func_230337_a_(state, nbt); // = super.read
+    public void load(BlockState state, CompoundNBT nbt) { // func_230337_a_ = read
+        super.load(state, nbt); // = super.read
 
         this.setCounter(nbt.getInt("counter"));
     }
 
     @Override
-    public CompoundNBT write(CompoundNBT compound) {
-        super.write(compound);
+    public CompoundNBT save(CompoundNBT compound) {
+        super.save(compound);
 
         compound.putInt("counter", this.getCounter());
 

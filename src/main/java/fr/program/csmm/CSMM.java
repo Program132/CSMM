@@ -1,8 +1,10 @@
 package fr.program.csmm;
 
 import fr.program.csmm.init.ModBlocks;
+import fr.program.csmm.init.ModFeatures;
 import fr.program.csmm.init.ModItems;
 import fr.program.csmm.init.ModTileEntities;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -24,7 +26,9 @@ public class CSMM {
     }
 
     private void setup(FMLCommonSetupEvent event) {
-
+        ModFeatures features = new ModFeatures();
+        features.init();
+        MinecraftForge.EVENT_BUS.register(features);
     }
 
     private void clientSetup(FMLClientSetupEvent event) {

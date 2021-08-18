@@ -5,7 +5,9 @@
   "item.csmm.copper_pickaxe": "Copper Pickaxe",
   "item.csmm.copper_axe": "Copper Axe",
   "item.csmm.copper_shovel": "Copper Shovel",
+  "item.csmm.amethyst_gem": "Amethyst Gem",
 
   "block.csmm.blue_emerald_block": "Blue Emerald Block",
-  "block.csmm.red_emerald_block": "Red Emerald Block"
+  "block.csmm.red_emerald_block": "Red Emerald Block",
+  "block.csmm.amethyst_ore": "Amethyst Ore"
 }

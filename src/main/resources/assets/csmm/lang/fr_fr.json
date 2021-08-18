@@ -5,7 +5,9 @@
   "item.csmm.copper_pickaxe": "Pioche en cuivre",
   "item.csmm.copper_axe": "Hache en cuivre",
   "item.csmm.copper_shovel": "Pelle en cuivre",
+  "item.csmm.amethyst_gem": "Gem d'améthyste",
 
   "block.csmm.blue_emerald_block": "Block d'émeraude Bleu",
-  "block.csmm.red_emerald_block": "Block d'émeraude Rouge"
+  "block.csmm.red_emerald_block": "Block d'émeraude Rouge",
+  "block.csmm.amethyst_ore": "Minerai d'améthyste"
 }

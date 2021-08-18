@@ -18,8 +18,11 @@ public class ModBlocks {
 
     public final static DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CSMM.ModID);
 
-    public static final RegistryObject<Block> BLUE_EMERALD_BLOCK = createBlock("blue_emerald_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(3f, 15).harvestTool(ToolType.PICKAXE).harvestLevel(2).func_235861_h_()));
+    public static final RegistryObject<Block> BLUE_EMERALD_BLOCK = createBlock("blue_emerald_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).strength(2f).harvestLevel(2).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> RED_EMERALD_BLOCK = createBlock("red_emerald_block", BlockRedEmerauld::new);
+
+
+    public static final RegistryObject<Block> AMETHYST_ORE = createBlock("amethyst_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).strength(2f).harvestLevel(2).requiresCorrectToolForDrops()));
 
 
     public static RegistryObject<Block> createBlock(String name, Supplier<Block> supplier) {

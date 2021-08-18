@@ -19,9 +19,8 @@ import net.minecraftforge.common.ToolType;
 import javax.swing.*;
 
 public class BlockRedEmerauld extends Block {
-
     public BlockRedEmerauld() {
-        super(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(5f, 20f).harvestTool(ToolType.PICKAXE).harvestLevel(1).func_235861_h_());
+        super(AbstractBlock.Properties.of(Material.METAL).strength(5f , 20f).harvestTool(ToolType.PICKAXE).harvestLevel(1).requiresCorrectToolForDrops());
     }
 
     @Override
@@ -35,14 +34,16 @@ public class BlockRedEmerauld extends Block {
     }
 
     @Override
-    public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+    public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
 
-        if(worldIn.getTileEntity(pos) instanceof TileEntityRedEmerauld) {
-            TileEntityRedEmerauld te = (TileEntityRedEmerauld) worldIn.getTileEntity(pos);
-            player.sendStatusMessage(new StringTextComponent("Counter " + te.getCounter()), true);
+        if(worldIn.getBlockEntity(pos) instanceof TileEntityRedEmerauld)
+        {
+            TileEntityRedEmerauld te = (TileEntityRedEmerauld) worldIn.getBlockEntity(pos);
+            player.displayClientMessage(new StringTextComponent("Counter : " + te.getCounter()), true);
             return ActionResultType.SUCCESS;
         }
 
         return ActionResultType.PASS;
     }
+
 }
