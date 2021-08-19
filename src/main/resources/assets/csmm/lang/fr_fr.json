@@ -19,5 +19,10 @@
 
   "block.csmm.blue_emerald_block": "Block d'émeraude Bleu",
   "block.csmm.red_emerald_block": "Block d'émeraude Rouge",
-  "block.csmm.amethyst_ore": "Minerai d'améthyste"
+  "block.csmm.amethyst_ore": "Minerai d'améthyste",
+
+
+
+  "key.categories.csmm" : "CSMM",
+  "key.csmm.test_key": "Touche de Test"
 }

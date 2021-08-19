@@ -1,9 +1,6 @@
 package fr.program.csmm;
 
-import fr.program.csmm.init.ModBlocks;
-import fr.program.csmm.init.ModFeatures;
-import fr.program.csmm.init.ModItems;
-import fr.program.csmm.init.ModTileEntities;
+import fr.program.csmm.init.*;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -32,6 +29,8 @@ public class CSMM {
     }
 
     private void clientSetup(FMLClientSetupEvent event) {
-
+        IEventBus bus = MinecraftForge.EVENT_BUS;
+        ModKeybindings.register();
+        bus.addListener(ModKeybindings::onKeyPress);
     }
 }

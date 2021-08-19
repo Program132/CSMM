@@ -19,5 +19,10 @@
 
   "block.csmm.blue_emerald_block": "Blue Emerald Block",
   "block.csmm.red_emerald_block": "Red Emerald Block",
-  "block.csmm.amethyst_ore": "Amethyst Ore"
+  "block.csmm.amethyst_ore": "Amethyst Ore",
+
+
+
+  "key.categories.csmm" : "CSMM",
+  "key.csmm.test_key": "Test Key"
 }
