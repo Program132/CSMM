@@ -9,7 +9,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModTileEntities {
 
-    public static final DeferredRegister<TileEntityType<?>> TILE_ENTITIES = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, CSMM.ModID);
+    public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, CSMM.ModID);
 
-    public static final RegistryObject<TileEntityType<?>> RED_EMERAULD_TILE_ENTITY = TILE_ENTITIES.register("red_emerauld_tile_entity", () -> TileEntityType.Builder.of(TileEntityRedEmerauld::new, ModBlocks.RED_EMERALD_BLOCK.get()).build(null));
+    public static final RegistryObject<TileEntityType<?>> RED_EMERAULD_TE = TILE_ENTITY.register("red_emerauld_te", () -> TileEntityType.Builder.of(TileEntityRedEmerauld::new, ModBlocks.RED_EMERAULD_BLOCK.get()).build(null));
+
 }

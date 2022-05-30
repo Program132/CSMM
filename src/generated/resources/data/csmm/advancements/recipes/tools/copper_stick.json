@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "csmm:copper_stick"
+    ]
+  },
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "csmm:copper_gem"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "csmm:copper_stick"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "unlock",
+      "has_the_recipe"
+    ]
+  ]
+}

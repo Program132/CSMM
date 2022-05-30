@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    " I ",
+    " C "
+  ],
+  "key": {
+    "I": {
+      "item": "csmm:copper_gem"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "csmm:copper_sword"
+  }
+}

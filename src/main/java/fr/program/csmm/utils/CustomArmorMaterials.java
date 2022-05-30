@@ -15,9 +15,7 @@ import java.util.function.Supplier;
 
 public enum CustomArmorMaterials implements IArmorMaterial {
 
-    AMETHYST_ARMOR(CSMM.ModID + ":amethyst", 18, new int[]{3, 6, 6, 2}, 11, SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> {
-        return Ingredient.of(ModItems.AMETHYST_GEM.get());
-    });
+    COPPER_ARMOR(CSMM.ModID + ":copper", 20, new int[]{4, 6, 6, 3}, 11, SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> {return Ingredient.of(ModItems.COPPER_GEM.get());});
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;
@@ -29,7 +27,7 @@ public enum CustomArmorMaterials implements IArmorMaterial {
     private final float knockbackResistance;
     private final LazyValue<Ingredient> repairIngredient;
 
-    CustomArmorMaterials(String p_i231593_3_, int p_i231593_4_, int[] p_i231593_5_, int p_i231593_6_, SoundEvent p_i231593_7_, float p_i231593_8_, float p_i231593_9_, Supplier<Ingredient> p_i231593_10_) {
+     CustomArmorMaterials(String p_i231593_3_, int p_i231593_4_, int[] p_i231593_5_, int p_i231593_6_, SoundEvent p_i231593_7_, float p_i231593_8_, float p_i231593_9_, Supplier<Ingredient> p_i231593_10_) {
         this.name = p_i231593_3_;
         this.durabilityMultiplier = p_i231593_4_;
         this.slotProtections = p_i231593_5_;
@@ -37,7 +35,7 @@ public enum CustomArmorMaterials implements IArmorMaterial {
         this.sound = p_i231593_7_;
         this.toughness = p_i231593_8_;
         this.knockbackResistance = p_i231593_9_;
-        this.repairIngredient = new LazyValue(p_i231593_10_);
+        this.repairIngredient = new LazyValue<>(p_i231593_10_);
     }
 
     public int getDurabilityForSlot(EquipmentSlotType p_200896_1_) {
@@ -57,7 +55,7 @@ public enum CustomArmorMaterials implements IArmorMaterial {
     }
 
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 
     @OnlyIn(Dist.CLIENT)

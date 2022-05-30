@@ -1,28 +1,22 @@
 {
-  "item.csmm.copper_ingot": "Lingot de Cuivre",
-  "item.csmm.copper_stick": "Bâton de Cuivre",
+  "item.csmm.copper_ingot": "Lingot de cuivre",
+  "item.csmm.copper_stick": "Bâton de cuivre",
+  "block.csmm.black_diamond_block": "Bloc de diamant noir",
   "item.csmm.copper_sword": "Epée en cuivre",
-  "item.csmm.copper_pickaxe": "Pioche en cuivre",
-  "item.csmm.copper_axe": "Hache en cuivre",
-  "item.csmm.copper_shovel": "Pelle en cuivre",
-  "item.csmm.amethyst_gem": "Gem d'améthyste",
+  "block.csmm.copper_ore": "Minerai de cuivre",
+  "item.csmm.copper_gem": "Gem de cuivre",
+  "item.csmm.copper_helmet": "Casque en cuivre",
+  "item.csmm.copper_chestplate": "Plastron en cuivre",
+  "item.csmm.copper_leggings": "Pantalon en cuivre",
+  "item.csmm.copper_boots": "Bottes en cuivre",
+  "block.csmm.red_emerauld_block": "Bloc d'émeraude rouge",
+  "itemGroup.csmm": "Principes de base de CSMM",
+  "item.csmm.bapple": "Bapple",
+  "block.csmm.tradium_ore": "Minerai de tradium",
+  "item.csmm.tradium_ingot": "Lingot de tradium",
+  "item.csmm.firestone": "Firestone",
 
-  "item.csmm.amethyst_helmet": "Casque en améthyste",
-  "item.csmm.amethyst_chestplate": "Plastron en améthyste",
-  "item.csmm.amethyst_leggings": "Pantalon en améthyste",
-  "item.csmm.amethyst_boots": "Bottes en améthyste",
-
-  "item.csmm.blue_apple": "Pomme bleu",
-  "item.csmm.green_apple": "Pomme verte",
-
-
-
-  "block.csmm.blue_emerald_block": "Block d'émeraude Bleu",
-  "block.csmm.red_emerald_block": "Block d'émeraude Rouge",
-  "block.csmm.amethyst_ore": "Minerai d'améthyste",
-
-
-
-  "key.categories.csmm" : "CSMM",
-  "key.csmm.test_key": "Touche de Test"
+  "key.categories.csmm": "CSMM",
+  "key.csmm.test_key": "Touche de test",
+  "key.csmm.mod_info": "Informations sur le mod"
 }

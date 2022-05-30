@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "csmm:copper_sword"
+    ]
+  },
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "csmm:copper_gem"
+          },
+          {
+            "item": "minecraft:stick"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "csmm:copper_sword"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "unlock",
+      "has_the_recipe"
+    ]
+  ]
+}

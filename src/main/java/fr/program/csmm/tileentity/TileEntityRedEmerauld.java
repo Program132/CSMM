@@ -5,18 +5,18 @@ import net.minecraft.block.BlockState;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityType;
 
 public class TileEntityRedEmerauld extends TileEntity implements ITickableTileEntity {
-
     private int counter = 0;
 
     public TileEntityRedEmerauld() {
-        super(ModTileEntities.RED_EMERAULD_TILE_ENTITY.get());
+        super(ModTileEntities.RED_EMERAULD_TE.get());
     }
 
     @Override
-    public void load(BlockState state, CompoundNBT nbt) { // func_230337_a_ = read
-        super.load(state, nbt); // = super.read
+    public void load(BlockState state, CompoundNBT nbt) {
+        super.load(state, nbt);
 
         this.setCounter(nbt.getInt("counter"));
     }
@@ -32,7 +32,7 @@ public class TileEntityRedEmerauld extends TileEntity implements ITickableTileEn
 
     @Override
     public void tick() {
-        setCounter(getCounter()+1);
+        setCounter(getCounter() + 1);
     }
 
     public int getCounter() {

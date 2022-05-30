@@ -14,13 +14,18 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class ModFeatures {
 
-    public ConfiguredFeature<?, ?> ORE_AMETHYST_FEATURE;
-
+    private ConfiguredFeature<?,?> TRADIUM_ORE_FEATURE;
+    public ConfiguredFeature<?, ?> COPPER_ORE_FEATURE;
 
     public void init() {
-        ORE_AMETHYST_FEATURE = register("ore_amethyst", Feature.ORE.configured(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.AMETHYST_ORE.get().defaultBlockState(), 6))
+        COPPER_ORE_FEATURE = register("ore_copper", Feature.ORE.configured(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.COPPER_ORE.get().defaultBlockState(), 5))
                 .squared()
-                .range(18)
+                .range(20)
+                .count(20));
+
+        TRADIUM_ORE_FEATURE = register("ore_tradium", Feature.ORE.configured(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.TRADIUM_ORE.get().defaultBlockState(), 5))
+                .squared()
+                .range(20)
                 .count(20));
     }
 
@@ -29,14 +34,14 @@ public class ModFeatures {
         return Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, name, feature);
     }
 
-
     @SubscribeEvent
     public void biomeLoading(BiomeLoadingEvent e)
     {
         BiomeGenerationSettingsBuilder generation = e.getGeneration();
         if(e.getCategory() != Biome.Category.NETHER)
         {
-            generation.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, ORE_AMETHYST_FEATURE);
+            generation.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, COPPER_ORE_FEATURE);
         }
     }
+
 }

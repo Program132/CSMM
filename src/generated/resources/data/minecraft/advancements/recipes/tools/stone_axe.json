@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:stone_axe"
+    ]
+  },
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stone"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:stone_axe"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "unlock",
+      "has_the_recipe"
+    ]
+  ]
+}

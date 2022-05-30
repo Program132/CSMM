@@ -16,11 +16,10 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ToolType;
 
-import javax.swing.*;
-
 public class BlockRedEmerauld extends Block {
+
     public BlockRedEmerauld() {
-        super(AbstractBlock.Properties.of(Material.METAL).strength(5f , 20f).harvestTool(ToolType.PICKAXE).harvestLevel(1).requiresCorrectToolForDrops());
+        super(AbstractBlock.Properties.of(Material.METAL).strength(5f, 20f).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
     }
 
     @Override
@@ -45,5 +44,4 @@ public class BlockRedEmerauld extends Block {
 
         return ActionResultType.PASS;
     }
-
 }
