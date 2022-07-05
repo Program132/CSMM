@@ -15,8 +15,15 @@
   "block.csmm.tradium_ore": "Tradium Ore",
   "item.csmm.tradium_ingot": "Tradium Ingot",
   "item.csmm.firestone": "Firestone",
+  "block.csmm.red_emerauld_stairs": "Red Emrald Stairs",
+  "block.csmm.red_emerauld_fence": "Red Emrald Fence",
+  "block.csmm.red_emerauld_fence_gate": "Red Emrald Fence Gate",
+  "block.csmm.red_emerauld_slab": "Red Emrald Slab",
 
   "key.categories.csmm": "CSMM",
   "key.csmm.test_key": "Test Key",
-  "key.csmm.mod_info": "Mod Informations"
+  "key.csmm.mod_info": "Mod Informations",
+
+  "tooltip.csmm.firestone": "Hold SHIFT to get more informations !",
+  "tooltip.csmm.firestone_shift": "Might set you on fire. But also might protect from it!"
 }

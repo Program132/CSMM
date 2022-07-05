@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "csmm:block/red_emerauld_block",
+    "top": "csmm:block/red_emerauld_block",
+    "side": "csmm:block/red_emerauld_block"
+  }
+}

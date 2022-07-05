@@ -15,8 +15,15 @@
   "block.csmm.tradium_ore": "Minerai de tradium",
   "item.csmm.tradium_ingot": "Lingot de tradium",
   "item.csmm.firestone": "Firestone",
+  "block.csmm.red_emerauld_stairs": "Escalier en émeraude rouge",
+  "block.csmm.red_emerauld_fence": "Barrière en émeraude rouge",
+  "block.csmm.red_emerauld_fence_gate": "Portail en émeraude rouge",
+  "block.csmm.red_emerauld_slab": "Dalle en émeraude rouge",
 
   "key.categories.csmm": "CSMM",
   "key.csmm.test_key": "Touche de test",
-  "key.csmm.mod_info": "Informations sur le mod"
+  "key.csmm.mod_info": "Informations sur le mod",
+
+  "tooltip.csmm.firestone": "Pressez SHIFT pour obtenir plus d'informations!",
+  "tooltip.csmm.firestone_shift": "Peut vous mettre en feu. Mais peut aussi vous en protéger !"
 }

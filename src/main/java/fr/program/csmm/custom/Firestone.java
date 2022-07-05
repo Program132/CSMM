@@ -1,8 +1,11 @@
 package fr.program.csmm.custom;
 
+import fr.program.csmm.CSMM;
 import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -12,13 +15,27 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
+import java.util.List;
 import java.util.Objects;
 
 public class Firestone extends Item {
     public Firestone(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack item, @Nullable World world, List<ITextComponent> list, ITooltipFlag flag) {
+        if (Screen.hasShiftDown()) {
+            list.add(new TranslationTextComponent("tooltip." + CSMM.ModID + ".firestone_shift"));
+        } else {
+            list.add(new TranslationTextComponent("tooltip." + CSMM.ModID + ".firestone"));
+        }
+        super.appendHoverText(item, world, list, flag);
     }
 
     @Override
