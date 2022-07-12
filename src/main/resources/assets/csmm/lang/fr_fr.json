@@ -26,6 +26,8 @@
   "item.csmm.firestone_axe" : "Hache en firestone",
   "item.csmm.firestone_shovel" : "Pelle en firestone",
   "item.csmm.firestone_hoe" : "Houe en firestone",
+  "block.csmm.red_emerauld_door": "Porte en émeraude rouge",
+  "block.csmm.red_emerauld_trapdoor": "Trappe en émeraude rouge",
 
   "key.categories.csmm": "CSMM",
   "key.csmm.test_key": "Touche de test",

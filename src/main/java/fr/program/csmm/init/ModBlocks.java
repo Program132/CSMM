@@ -52,6 +52,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> RED_EMERAULD_PRESSURE_PLATE = createBlock("red_emerauld_pressure_plate",
             () ->  new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, AbstractBlock.Properties.of(Material.METAL)));
 
+    public static final RegistryObject<Block> RED_EMERAULD_DOOR = createBlock("red_emerauld_door",
+            () -> new DoorBlock(AbstractBlock.Properties.of(Material.METAL).harvestLevel(2).harvestTool(ToolType.PICKAXE)));
+
+    public static final RegistryObject<Block> RED_EMERAULD_TROPDOOR = createBlock("red_emerauld_trapdoor",
+            () -> new TrapDoorBlock(AbstractBlock.Properties.of(Material.METAL).harvestLevel(2).harvestTool(ToolType.PICKAXE)));
 
 
     public static RegistryObject<Block> createBlock(String name, Supplier<Block> supplier) {

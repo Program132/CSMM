@@ -26,6 +26,8 @@
   "item.csmm.firestone_axe" : "Firestone Axe",
   "item.csmm.firestone_shovel" : "Firestone Shovel",
   "item.csmm.firestone_hoe" : "Firestone Hoe",
+  "block.csmm.red_emerauld_door": "Red Emrald Door",
+  "block.csmm.red_emerauld_trapdoor": "Red Emrald Trapdoor",
 
   "key.categories.csmm": "CSMM",
   "key.csmm.test_key": "Test Key",
