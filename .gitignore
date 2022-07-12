@@ -1,0 +1,13 @@
+.gradle
+.idea
+build
+gradle
+run
+build.gradle
+changelog.txt
+CREDITS.txt
+gradle.properties
+gradlew
+gradlew.bat
+LICENSE.txt
+README.txt
