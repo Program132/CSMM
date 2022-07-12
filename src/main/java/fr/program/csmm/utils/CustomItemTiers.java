@@ -6,7 +6,8 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 
 public enum CustomItemTiers implements IItemTier {
-    COPPER(1, 420, 4.8f, 1.5f, 10, new LazyValue<>(() -> {return Ingredient.of(ModItems.COPPER_INGOT.get());}));
+    COPPER(1, 420, 4.8f, 1.5f, 10, new LazyValue<>(() -> {return Ingredient.of(ModItems.COPPER_INGOT.get());})),
+    FIRESTONE(2, 125, 3.5f, 8f, 9, new LazyValue<>(()-> {return Ingredient.of(ModItems.FIRESTONE.get());}));
 
     private final int harvestLevel;
     private final int maxUses;

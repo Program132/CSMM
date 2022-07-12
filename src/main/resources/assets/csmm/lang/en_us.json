@@ -21,6 +21,11 @@
   "block.csmm.red_emerauld_slab": "Red Emrald Slab",
   "block.csmm.red_emerauld_pressure_plate": "Red Emrald Pressure Plate",
   "block.csmm.red_emerauld_button": "Red Emrald Button",
+  "item.csmm.firestone_sword" : "Firestone Sword",
+  "item.csmm.firestone_pickaxe" : "Firestone Pickaxe",
+  "item.csmm.firestone_axe" : "Firestone Axe",
+  "item.csmm.firestone_shovel" : "Firestone Shovel",
+  "item.csmm.firestone_hoe" : "Firestone Hoe",
 
   "key.categories.csmm": "CSMM",
   "key.csmm.test_key": "Test Key",
