@@ -46,6 +46,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> RED_EMERAULD_SLAB = createBlock("red_emerauld_slab",
             () ->  new SlabBlock(AbstractBlock.Properties.of(Material.METAL).harvestLevel(3).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> RED_EMERAULD_BUTTON = createBlock("red_emerauld_button",
+            () ->  new StoneButtonBlock(AbstractBlock.Properties.of(Material.METAL)));
+
+    public static final RegistryObject<Block> RED_EMERAULD_PRESSURE_PLATE = createBlock("red_emerauld_pressure_plate",
+            () ->  new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, AbstractBlock.Properties.of(Material.METAL)));
+
 
 
     public static RegistryObject<Block> createBlock(String name, Supplier<Block> supplier) {
