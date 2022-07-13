@@ -13,10 +13,13 @@ public class DataGeneration {
 
     @SubscribeEvent
     public static void gatherData(final GatherDataEvent e) {
-        DataGenerator generator = e.getGenerator();
+        DataGenerator gen = e.getGenerator();
+
+        gen.addProvider(new LangGeneratorEN(gen));
+        gen.addProvider(new LangGeneratorFR(gen));
 
         if(e.includeServer()) {
-            generator.addProvider(new RecipeGenerator(generator));
+            gen.addProvider(new RecipeGenerator(gen));
         }
     }
 

@@ -40,13 +40,11 @@ public class ModItems {
             () -> new ArmorItem(CustomArmorMaterials.COPPER_ARMOR, EquipmentSlotType.FEET, new Item.Properties().tab(ItemGroup.TAB_COMBAT).stacksTo(1)));
 
 
-    public static final RegistryObject<Item> FIRESTONE = ITEMS.register("firestone",
-            () -> new Firestone(new Item.Properties().tab(ModItemGroups.CSMM_TAB).stacksTo(1).durability(8)));
-
     public static final RegistryObject<Item> TRADIUM_INGOT = ITEMS.register("tradium_ingot",
             () -> new Item(new Item.Properties().tab(ModItemGroups.CSMM_TAB)));
 
-
+    public static final RegistryObject<Item> FIRESTONE = ITEMS.register("firestone",
+            () -> new Firestone(new Item.Properties().tab(ModItemGroups.CSMM_TAB).stacksTo(1).durability(8)));
 
     public static final RegistryObject<Item> FIRESTONE_SWORD = ITEMS.register("firestone_sword",
             () -> new SwordItem(CustomItemTiers.FIRESTONE,  0, 2f, new Item.Properties().stacksTo(1).tab(ModItemGroups.CSMM_TAB)));
